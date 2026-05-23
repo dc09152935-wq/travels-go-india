@@ -1,0 +1,14 @@
+{
+  "name": "go-india-travel",
+  "version": "1.0.0",
+  "description": "Go India - Premium Travel Business Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5"
+  }
+}

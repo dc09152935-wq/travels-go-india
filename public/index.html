@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Go India Travel - Your trusted travel partner based in Agra. Explore Manali, Uttarakhand, Goa, Jaipur, Kerala, Varanasi, Ladakh and more with our expertly curated travel packages.">
+  <meta name="keywords" content="travel, India, Manali, Uttarakhand, Goa, Jaipur, Kerala, Varanasi, Ladakh, Agra, tour packages, travel agency">
+  <title>Go India Travel | Explore Incredible India - Premium Travel Packages</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Go India</div>
+  </div>
+
+  <!-- Background Glows -->
+  <div class="bg-glow bg-glow--gold"></div>
+  <div class="bg-glow bg-glow--blue"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo" id="navLogo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="rgba(255,255,255,0.25)"></polygon>
+          </svg>
+        </div>
+        <div class="nav-logo-text">Go <span>India</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active" data-nav="home">Home</a>
+        <a href="#destinations" data-nav="destinations">Destinations</a>
+        <a href="#tours" data-nav="tours">Tours</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+        <a href="#" class="nav-cta" id="searchBtn">🔍 Search</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Trusted Travel Partner Since 2015
+      </div>
+      <h1 class="hero-title">
+        Discover the Magic of <br><span class="highlight">Incredible India</span>
+      </h1>
+      <p class="hero-subtitle">
+        From the snow-capped Himalayas to sun-kissed beaches, ancient temples to vibrant cities — experience India like never before with expertly curated journeys.
+      </p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">
+          Explore Destinations
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          📞 Contact Us
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="8">0</span>
+          <span class="hero-stat-label">Destinations</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="500">0</span>
+          <span class="hero-stat-label">Happy Travelers</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="50">0</span>
+          <span class="hero-stat-label">Tour Packages</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="10">0</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FEATURED DESTINATIONS
+       ============================================ -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag">🗺️ Top Destinations</div>
+        <h2 class="section-title">Explore <span class="highlight">Breathtaking</span> Places</h2>
+        <p class="section-desc">Handpicked destinations across India that promise unforgettable experiences, rich culture, and stunning natural beauty.</p>
+      </div>
+
+      <div class="destinations-grid" id="destinationsGrid">
+        <!-- Destinations loaded dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY CHOOSE US
+       ============================================ -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag">✨ Why Go India</div>
+        <h2 class="section-title">Why <span class="highlight">Travelers</span> Choose Us</h2>
+        <p class="section-desc">We don't just plan trips — we craft memories that last a lifetime.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll delay-1">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Safe & Secure Travel</h3>
+          <p class="feature-desc">Your safety is our top priority. We ensure verified accommodations, licensed drivers, and 24/7 travel support.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-2">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">Best Price Guarantee</h3>
+          <p class="feature-desc">Get the most competitive prices without compromising on quality. We match or beat any comparable offer.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-3">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Customized Itineraries</h3>
+          <p class="feature-desc">Every trip is unique. We tailor every detail of your journey to match your preferences and budget.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-4">
+          <div class="feature-icon">🌟</div>
+          <h3 class="feature-title">Expert Local Guides</h3>
+          <p class="feature-desc">Our experienced local guides bring every destination to life with insider knowledge and hidden gems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       POPULAR TOURS
+       ============================================ -->
+  <section class="section" id="tours">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag">🎫 Popular Tours</div>
+        <h2 class="section-title">Trending <span class="highlight">Tour Packages</span></h2>
+        <p class="section-desc">Our most-loved packages, handcrafted for the perfect Indian adventure.</p>
+      </div>
+
+      <div class="tours-grid" id="toursGrid">
+        <!-- Tours loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT US
+       ============================================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <img src="/images/agra.png" alt="Taj Mahal, Agra - Go India Travel Headquarters">
+        </div>
+        <div class="about-content animate-on-scroll">
+          <div class="section-tag">🏢 About Us</div>
+          <h2 class="about-title">Your Trusted Travel Partner from the City of <span class="highlight">Taj Mahal</span></h2>
+          <p class="about-desc">
+            Based in the historic city of <strong>Agra</strong>, Go India Travel has been creating extraordinary travel experiences across India since 2015. We believe that travel is not just about visiting places — it's about creating stories, building connections, and discovering the incredible diversity that India has to offer.
+          </p>
+          <p class="about-desc">
+            Our passionate team of travel experts works tirelessly to ensure every journey is seamless, every experience is authentic, and every memory is worth cherishing. Whether you're seeking adventure in Ladakh, spirituality in Varanasi, or relaxation in Goa — we've got you covered.
+          </p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <span class="about-highlight-icon">🏔️</span>
+              <span class="about-highlight-text">Mountain Expeditions</span>
+            </div>
+            <div class="about-highlight">
+              <span class="about-highlight-icon">🏖️</span>
+              <span class="about-highlight-text">Beach Getaways</span>
+            </div>
+            <div class="about-highlight">
+              <span class="about-highlight-icon">🕌</span>
+              <span class="about-highlight-text">Heritage Tours</span>
+            </div>
+            <div class="about-highlight">
+              <span class="about-highlight-icon">💑</span>
+              <span class="about-highlight-text">Honeymoon Specials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag">💬 Testimonials</div>
+        <h2 class="section-title">What Our <span class="highlight">Travelers</span> Say</h2>
+        <p class="section-desc">Real stories from real travelers who explored India with us.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll delay-1">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Our Manali trip was absolutely magical! The team planned everything perfectly — from the hotel to the Rohtang Pass permits. The sunset views from Solang Valley were breathtaking. Highly recommend Go India Travel!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Rahul Kumar</div>
+              <div class="testimonial-trip">Manali Adventure Trip</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll delay-2">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"We took the Kerala Honeymoon Package and it exceeded all expectations. The houseboat experience in Alleppey was like something from a dream. Thank you for making our honeymoon so special!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PS</div>
+            <div>
+              <div class="testimonial-name">Priya & Suresh</div>
+              <div class="testimonial-trip">Kerala Honeymoon Package</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll delay-3">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"The Uttarakhand spiritual tour was life-changing. The Ganga Aarti in Haridwar brought tears to my eyes. The guide was incredibly knowledgeable. Best travel agency I've ever worked with!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AM</div>
+            <div>
+              <div class="testimonial-name">Amit Mehta</div>
+              <div class="testimonial-trip">Uttarakhand Spiritual Tour</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER
+       ============================================ -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <h2 class="cta-title">Ready to Start Your <span class="highlight">Indian Adventure</span>?</h2>
+        <p class="cta-desc">Let us plan the perfect trip for you. Call us now or fill out the contact form and we'll get back to you within 24 hours!</p>
+        <div class="cta-actions">
+          <a href="tel:7906038019" class="btn btn-primary">📞 Call: 7906038019</a>
+          <a href="#contact" class="btn btn-outline">Send Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <h2 class="contact-info-title">Let's Plan Your <span class="highlight">Dream Trip</span></h2>
+          <p class="contact-info-desc">Have questions or ready to book? Reach out to us through any of the channels below. Our travel experts are here to help you create the perfect itinerary.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div>
+                <div class="contact-detail-label">Phone Numbers</div>
+                <div class="contact-detail-value">
+                  <a href="tel:7906038019">+91 7906038019</a><br>
+                  <a href="tel:8650554950">+91 8650554950</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📧</div>
+              <div>
+                <div class="contact-detail-label">Email Address</div>
+                <div class="contact-detail-value">
+                  <a href="mailto:dc09152935@gmail.com">dc09152935@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Office Location</div>
+                <div class="contact-detail-value">Agra, Uttar Pradesh, India</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🕐</div>
+              <div>
+                <div class="contact-detail-label">Working Hours</div>
+                <div class="contact-detail-value">Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+            <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper animate-on-scroll">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name *</label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactDest">Interested Destination</label>
+                <select id="contactDest" name="destination" class="form-select">
+                  <option value="">Select destination</option>
+                  <option value="manali">Manali</option>
+                  <option value="uttarakhand">Uttarakhand</option>
+                  <option value="goa">Goa</option>
+                  <option value="jaipur">Jaipur</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="varanasi">Varanasi</option>
+                  <option value="ladakh">Ladakh</option>
+                  <option value="agra">Agra</option>
+                  <option value="custom">Custom / Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" name="message" class="form-textarea" placeholder="Tell us about your dream trip — travel dates, number of travelers, preferences..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="contactSuccess">
+            <div class="form-success-icon">✅</div>
+            <h3 class="form-success-title">Message Sent Successfully!</h3>
+            <p class="form-success-text">Thank you for reaching out! Our team will get back to you within 24 hours. You can also call us directly at <strong>+91 7906038019</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="rgba(255,255,255,0.25)"></polygon>
+              </svg>
+            </div>
+            <div class="footer-logo-text">Go <span>India</span></div>
+          </div>
+          <p class="footer-about">Your trusted travel partner based in Agra. We specialize in curating unforgettable travel experiences across the length and breadth of incredible India.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+            <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Destinations</h4>
+          <div class="footer-links">
+            <a href="#" onclick="openDestination('manali'); return false;">→ Manali</a>
+            <a href="#" onclick="openDestination('uttarakhand'); return false;">→ Uttarakhand</a>
+            <a href="#" onclick="openDestination('goa'); return false;">→ Goa</a>
+            <a href="#" onclick="openDestination('jaipur'); return false;">→ Jaipur</a>
+            <a href="#" onclick="openDestination('kerala'); return false;">→ Kerala</a>
+            <a href="#" onclick="openDestination('ladakh'); return false;">→ Ladakh</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">→ Home</a>
+            <a href="#destinations">→ Destinations</a>
+            <a href="#tours">→ Tour Packages</a>
+            <a href="#about">→ About Us</a>
+            <a href="#contact">→ Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-links">
+            <a href="tel:7906038019">📞 +91 7906038019</a>
+            <a href="tel:8650554950">📞 +91 8650554950</a>
+            <a href="mailto:dc09152935@gmail.com">📧 dc09152935@gmail.com</a>
+            <a href="#">📍 Agra, Uttar Pradesh</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 Go India Travel. All rights reserved. Made with ❤️ in Agra</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       DESTINATION DETAIL MODAL
+       ============================================ -->
+  <div class="modal-overlay" id="destModal">
+    <div class="modal-content" id="destModalContent">
+      <button class="modal-close" id="destModalClose" aria-label="Close modal">✕</button>
+      <!-- Content loaded dynamically -->
+    </div>
+  </div>
+
+  <!-- ============================================
+       BOOKING MODAL
+       ============================================ -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+      <button class="modal-close" id="bookingModalClose" aria-label="Close booking modal">✕</button>
+      <h2 class="booking-title">Book Your Trip</h2>
+      <p class="booking-subtitle" id="bookingSubtitle">Fill in your details and we'll plan the perfect trip for you.</p>
+      <form id="bookingForm">
+        <input type="hidden" id="bookingDest" name="destination">
+        <input type="hidden" id="bookingPkg" name="packageName">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingName">Your Name *</label>
+            <input type="text" id="bookingName" name="name" class="form-input" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookingEmail">Email *</label>
+            <input type="email" id="bookingEmail" name="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingPhone">Phone</label>
+            <input type="tel" id="bookingPhone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookingTravelers">Travelers</label>
+            <select id="bookingTravelers" name="travelers" class="form-select">
+              <option value="1">1 Person</option>
+              <option value="2" selected>2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+              <option value="6+">6+ People</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookingDate">Preferred Travel Date</label>
+          <input type="date" id="bookingDate" name="travelDate" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookingMessage">Special Requests</label>
+          <textarea id="bookingMessage" name="message" class="form-textarea" placeholder="Any special requirements or preferences..." rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          Submit Booking Inquiry
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+      <div class="form-success" id="bookingSuccess">
+        <div class="form-success-icon">🎉</div>
+        <h3 class="form-success-title">Booking Inquiry Received!</h3>
+        <p class="form-success-text">Our travel experts will contact you within 24 hours with the best deals. For urgent inquiries, call <strong>+91 7906038019</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SEARCH OVERLAY
+       ============================================ -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search destinations, activities, places..." autocomplete="off">
+        <button class="search-close" id="searchClose">✕</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
